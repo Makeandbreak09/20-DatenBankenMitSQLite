@@ -49,6 +49,24 @@ public class MainController {
      */
     public void printLastQuery(){
         //TODO 01: siehe Kommentar
+        if(dbConnector.getCurrentQueryResult() != null){
+            String result = "";
+
+            String[][] data = dbConnector.getCurrentQueryResult().getData();
+            String[] columnNames = dbConnector.getCurrentQueryResult().getColumnNames();
+            String[] columnTypes = dbConnector.getCurrentQueryResult().getColumnTypes();
+            int columnCount = dbConnector.getCurrentQueryResult().getColumnCount();
+
+            for (int j = 0; j < columnCount; j++) {
+
+            }
+
+            for(int i = 0; i<data.length; i++) {
+                for (int j = 0; j < columnCount; j++) {
+
+                }
+            }
+        }
     }
 
 
