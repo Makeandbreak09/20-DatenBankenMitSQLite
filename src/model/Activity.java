@@ -2,6 +2,9 @@ package model;
 
 public class Activity {
 
+    public final static String[] attributeNames = {"Kurzbeschreibung", "Ort ID", "Dauer", "Langbeschreibung", "Partner Bezeichnung", "Partner Tel.-Nr."};
+    public final static String[] attributeTypes = {"String", "int", "int", "String", "String", "String"};
+
     private String kurzbeschreibung;
     private int ortID;
     private int dauer;
